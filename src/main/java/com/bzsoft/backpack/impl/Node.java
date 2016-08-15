@@ -45,18 +45,18 @@ final class Node implements Comparable<Node>{
     public int compareTo(final Node n) {
         //expected incremented units per item in bag
 
-        //        final double nest =  n.len == 0 ? 0 : (n.estimate - n.value)/ n.len;
-        //        final double est = this.len == 0 ? 0 : (this.estimate - this.value)/ this.len;
-        //        return est < nest ? -1 : est > nest ? 1 : 0;
+                final double nest =  n.len == 0 ? 0 : (n.estimate - n.value)/ n.len;
+                final double est = this.len == 0 ? 0 : (this.estimate - this.value)/ this.len;
+                return est < nest ? -1 : est > nest ? 1 : 0;
 
         //        final double nest =  size - n.len == 0 ? 0 : (n.estimate - n.value)/ (size - n.len);
         //        final double est = size - this.len == 0 ? 0 : (this.estimate - this.value)/ (size - this.len);
         //        return est < nest ? 1 : est > nest ? -1 : 0;
 
         //classical
-        final double est = estimate;
-        final double nest = n.estimate;
-        return est < nest ? 1 : est > nest ? -1 : 0;
+        //final double est = estimate;
+        //final double nest = n.estimate;
+        //return est < nest ? 1 : est > nest ? -1 : 0;
 
     }
 
