@@ -15,7 +15,7 @@ import com.bzsoft.backpack.impl.ProblemSolverImpl;
  */
 public class SolverTest {
 
-    public void testMain(){
+    public void tst(){
         main(null);
     }
     /**
